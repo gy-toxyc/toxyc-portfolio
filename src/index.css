@@ -1,68 +1,114 @@
+@font-face {
+	font-family: 'Lexend-Black';
+	src: url(./assets/fonts/Lexend-Black.ttf);
+}
+
+@font-face {
+	font-family: 'Lexend-Bold';
+	src: url(./assets/fonts/Lexend-Bold.ttf);
+}
+
+@font-face {
+	font-family: 'Lexend-ExtraBold';
+	src: url(./assets/fonts/Lexend-ExtraBold.ttf);
+}
+
+@font-face {
+	font-family: 'Lexend-ExtraLight';
+	src: url(./assets/fonts/Lexend-ExtraLight.ttf);
+}
+
+@font-face {
+	font-family: 'Lexend-Light';
+	src: url(./assets/fonts/Lexend-Light.ttf);
+}
+
+@font-face {
+	font-family: 'Lexend-Medium';
+	src: url(./assets/fonts/Lexend-Medium.ttf);
+}
+
+@font-face {
+	font-family: 'Lexend-Regular';
+	src: url(./assets/fonts/Lexend-SemiBold.ttf);
+}
+
+@font-face {
+	font-family: 'Lexend-Thin';
+	src: url(./assets/fonts/Lexend-Thin.ttf);
+}
+
+@font-face {
+	font-family: 'Valorant';
+	src: url(./assets/fonts/Valorant.ttf);
+}
+
+@font-face {
+	font-family: 'ArcaMajora3-Bold';
+	src: url(./assets/fonts/ArcaMajora3-Bold.otf);
+}
+
+@font-face {
+	font-family: 'ArcaMajora3-Heavy';
+	src: url(./assets/fonts/ArcaMajora3-Heavy.otf);
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+	--toxyc-color: #e4b109;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+	--main-text: #ffffffe7;
+	
+	--selection-bg: #ffa60011;
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	/* ====================== */
+
+	font-family: 'ArcaMajora3-Bold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	line-height: 1;
+	font-weight: 100;
+
+	color-scheme: light dark;
+	color: var(--main-text);
+
+	background: #0d0d0d;
+	background-size: contain;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+#root{
+	width: 100vw;
 }
-a:hover {
-  color: #535bf2;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+*::selection {
+	background-color: var(--selection-bg);
+	border-radius: 6px;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+	overflow-x: hidden;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+html {
+	scroll-behavior: smooth;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+a {
+	text-decoration: none;
+	color: inherit;
+	font-family: inherit;
+	font-weight: inherit;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
+h3 {
+	font-weight: 100;
 }
