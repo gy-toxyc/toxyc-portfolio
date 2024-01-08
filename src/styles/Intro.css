@@ -1,8 +1,164 @@
 .intro {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    gap: 10%;
 
     background-image: url(../assets/img/intro-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.intro-animation {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    padding-bottom: 5%;
+
+    transform: rotateY(180deg);
+    filter: hue-rotate(-16deg) brightness(90%) drop-shadow(0px 0px 10px var(--intro-animation-shadow));
+}
+
+.intro-box {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+    padding-top: 5%;
+}
+
+.intro-text {
+    width: 100%;
+    
+    line-height: 10px;
+    letter-spacing: 4px;
+
+    font-family: 'Lexend-Light';
+    font-size: 24px;
+
+    text-align: start;
+}
+
+.intro-text span {
+    width: 100%;
+
+    color: var(--toxyc-color);
+
+    line-height: 70px;
+    letter-spacing: 2px;
+
+    font-family: 'ArcaMajora3-Heavy';
+    font-size: 72px;
+}
+
+.intro-media {
+    width: 100%;
+    height: 7%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    gap: 10px;
+
+    list-style: none;
+}
+
+.intro-media-icon {
+    font-size: 30px;
+    
+    opacity: 40%;
+    transition: .5s;
+}
+
+.intro-media-icon:hover {
+    cursor: pointer;
+
+    transition: .5s;
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 10px var(--intro-media-brightness));
+}
+
+@media screen and (max-width: 900px) {
+    .intro {
+        flex-direction: column;
+
+        gap: 0px;
+    }
+
+    .intro-media {
+        height: 15%;
+    }
+
+    .intro-animation {
+        height: 40%;
+        width: 100%;
+
+        padding: 0px;
+    }
+    
+    .intro-box {
+        height: 20%;
+        width: 100%;
+
+        gap: 20px;
+    }
+
+    .intro-text {
+        text-align: center;
+    }
+
+    .intro-media {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .intro-animation {
+        height: 27%;
+    }
+
+    .intro-box {
+        height: 15%;
+        gap: 10px;
+    }
+
+    .intro-text {
+        line-height: 20px;
+
+        font-size: 15px;
+    }
+
+    .intro-text span {
+        line-height: 0px;
+
+        font-size: 38px;
+    }
 }

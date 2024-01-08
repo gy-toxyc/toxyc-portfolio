@@ -58,8 +58,13 @@
 
 	--main-text: #ffffffe7;
 	
+	--main-bg: #0d0d0d;
 	--selection-bg: #ffa6002c;
 
+	--navbar-brightness: #ffffffb4;
+	--intro-media-brightness: #ffffff3b;
+	--intro-animation-shadow: #000000;
+	
 	/* ====================== */
 
 	font-family: 'ArcaMajora3-Bold', Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
@@ -69,7 +74,7 @@
 	color-scheme: light dark;
 	color: var(--main-text);
 
-	background: #0d0d0d;
+	background: var(--main-bg);
 	background-size: contain;
 }
 

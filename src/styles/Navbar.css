@@ -1,4 +1,6 @@
 .navbar {
+    position: fixed;
+
     width: 100%;
     height: 10%;
 
@@ -14,7 +16,7 @@
 }
 
 .navbar-logo {
-    height: 40px;
+    height: 45px;
 
     display: flex;
     flex-direction: row;
@@ -24,7 +26,7 @@
     align-items: center;
     align-content: center;
 
-    padding-left: 2%;
+    padding-left: 40px;
 }
 
 .navbar-list {
@@ -40,13 +42,41 @@
     align-content: center;
 
     margin: 0px;
-    padding-right: 2%;
+    padding-right: 40px;
 
     gap: 30px;
 
     list-style: none;
 }
 
+.navbar-element {
+    transition: .5s;
+}
+
+.navbar-element:hover {
+    cursor: pointer;
+
+    transition: .5s;
+    filter: drop-shadow(0px 0px 10px var(--navbar-brightness));
+}
+
 .navbar-element h3 {
     font-size: 14px;
+}
+
+@media screen and (max-width: 900px) {
+}
+
+@media screen and (max-width: 720px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar-logo {
+        padding: 0px;
+    }
+
+    .navbar-list {
+        display: none;
+    }
 }
