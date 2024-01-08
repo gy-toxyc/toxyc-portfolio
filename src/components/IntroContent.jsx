@@ -9,7 +9,7 @@ export function IntroContent() {
             <Lottie className="intro-animation" animationData={introAnimation} draggable="false"/>
 
             <div className="intro-box">
-                <h3 className="intro-text"><span>IVAN VICENTE</span><br/>SOFTWARE DEVELOPER</h3>
+                <h3 className="intro-text"><span>IVÁN VICENTE</span><br/>SOFTWARE DEVELOPER</h3>
             </div>
         </div>
     )
