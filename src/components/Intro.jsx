@@ -6,7 +6,7 @@ import introAnimation from '../assets/animations/intro-animation.json'
 
 import '../styles/Intro.css'
 
-export function Intro(props) {
+export function Intro() {
     const ANIMATION_SPEED = 0.2;
 
 	const lottieRef = useRef();
@@ -18,7 +18,7 @@ export function Intro(props) {
 	}, []);
 
 	return (
-		<div className="intro">
+		<div id="home" className="intro">
 			<Lottie className="intro-animation" animationData={introAnimation} lottieRef={lottieRef} draggable="false" />
 
 			<div className="intro-box">

@@ -54,16 +54,18 @@
 }
 
 :root {
-	--toxyc-color: #e4c309;
+	--toxyc-color: #e4bc09;
 
 	--main-text: #ffffffe7;
+	--contrast-text: #000000;
 	
 	--main-bg: #0d0d0d;
 	--selection-bg: #ffa6002c;
 
-	--navbar-brightness: #ffffffb4;
+	--navbar-brightness: #ffffffd3;
 	--intro-media-brightness: #ffffff3b;
 	--intro-animation-shadow: #000000;
+	--about-cv-brightness: #e4c30933;
 	
 	/* ====================== */
 
@@ -75,7 +77,6 @@
 	color: var(--main-text);
 
 	background: var(--main-bg);
-	background-size: contain;
 }
 
 #root{

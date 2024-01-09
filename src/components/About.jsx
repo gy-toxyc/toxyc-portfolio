@@ -1,31 +1,24 @@
-import React, { useRef, useEffect } from 'react'
-import Lottie from 'lottie-react'
-import aboutAnimation from '../assets/animations/about-animation.json'
-
 import '../styles/About.css'
 
-export function About(props) {
-    const ANIMATION_SPEED = 1;
-
-	const lottieRef = useRef();
-
-	useEffect(() => {
-		if (lottieRef.current) {
-			lottieRef.current.setSpeed(ANIMATION_SPEED);
-		}
-	}, []);
-
+export function About() {
     return (
-        <div className="about">
+        <div id="about" className="about">
             <div className="about-info-box">
                 <h1 className="about-info-title">ABOUT ME</h1>
                 <p className="about-info-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi tenetur nihil, expedita dolor repellat cumque rerum veritatis sequi laboriosam error mollitia harum,<br />
-                    eum voluptatibus nesciunt, deleniti doloribus fugit facilis dolorum.
+                    Apasionado del desarrollo de 21 años.<br />
+                    Desde la adolescencia, se ha sumergido en el fascinante mundo de la programación, enfocándose especialmente en el desarrollo de videojuegos y el desarrollo back-end.<br />
+                    <br />
+                    Su interés se extiende al desarrollo full-stack, y cuenta con experiencia en Java/Kotlin, JavaScript y SQL. Además, posee un nivel de inglés casi-nativo (C1).<br />
+                    Su pasión y habilidades suponen una importante adición a proyectos innovadores.<br />
                 </p>
+                <div className="about-cv-button">
+                    <h4 className="about-cv-text">Descargar CV</h4>
+                </div>
             </div>
-            
-			<Lottie className="about-animation" animationData={aboutAnimation} lottieRef={lottieRef} draggable="false" />
+            <div className="about-picture-box">
+			    <img src="" alt="aboutPicture" className="about-picture" />
+            </div>
         </div>
     )
 }
