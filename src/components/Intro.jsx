@@ -6,8 +6,8 @@ import introAnimation from '../assets/animations/intro-animation.json'
 
 import '../styles/Intro.css'
 
-export function Intro() {
-	const ANIMATION_SPEED = 0.2;
+export function Intro(props) {
+    const ANIMATION_SPEED = 0.2;
 
 	const lottieRef = useRef();
 

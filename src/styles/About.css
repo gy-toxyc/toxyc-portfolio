@@ -13,6 +13,44 @@
     background-image: url(../assets/img/intro-bg.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
 
-    transform: rotateX(180deg);
+.about-info-box {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: flex-start;
+    align-content: center;
+
+    padding-left: 15%;
+}
+
+.about-info-title {
+    font-size: 55px;
+}
+
+.about-info-desc {
+    font-size: 20px;
+
+    text-align: start;
+}
+
+.about-animation {
+    width: 100%;
+    height: 60%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    filter: brightness(50) hue-rotate(338deg);
 }
