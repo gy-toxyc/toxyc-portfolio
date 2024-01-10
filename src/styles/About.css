@@ -12,7 +12,7 @@
 
     background-image: url(../assets/img/intro-bg-inverted.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
     background-position-y: 100%;
 
     gap: 80px;
@@ -103,7 +103,7 @@
 
 .about-picture-box {
     width: 30%;
-    height: 60%;
+    height: 40%;
 
     display: flex;
     flex-direction: column;
@@ -115,8 +115,8 @@
 }
 
 .about-picture {
-    width: 400px;
-    height: 100%;
+    width: 350px;
+    height: 490px;
 
     display: flex;
     flex-direction: column;
@@ -126,10 +126,24 @@
     align-items: center;
     align-content: center;
 
-    background: var(--toxyc-color);
+    border-radius: 18px;
+
+    background: #ffffff23;
+
+    border: 2px solid var(--toxyc-color);
 }
 
 @media screen and (max-width: 1075px) {
+    .about-picture-box {
+        width: 20%;
+        height: 30%;
+    }
+
+    .about-picture {
+        width: 220px;
+        height: 340px;
+    }
+
     .about-info-title {
         font-size: 40px;
     }
@@ -140,13 +154,25 @@
 }
 
 @media screen and (max-width: 790px) {
-    /* TODO. Change this, I want the picture to still be available in small devices. */
+    .about {
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
     .about-picture-box {
-        display: none;
+        width: 20%;
+        height: 30%;
+    }
+
+    .about-picture {
+        width: 185px;
+        height: 240px;
     }
 
     .about-info-box {
         align-items: center;
+        width: 80%;
+        height: 40%;
     }
 
     .about-info-title, .about-info-desc, .about-cv-button {

@@ -1,0 +1,82 @@
+.skill-element {
+    position: relative;
+
+    height: 80px;
+    width: 200px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    background-color: var(--skills-default-bg);
+    border: 2px solid var(--skills-default-border);
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    transition: .5s;
+}
+
+.skill-name {
+    font-size: 23px;
+    text-align: center;
+
+    user-select: none;
+
+    z-index: 3;
+}
+
+.skill-image {
+    position: absolute;
+
+    height: 120%;
+
+    left: 100%;
+    top: 30%;
+    opacity: 0;
+
+    filter: drop-shadow(0px 0px 10px #0000009c);
+
+    z-index: 2;
+    transition: .5s;
+}
+
+.skill-element:hover .skill-image {
+    transition: .5s;
+
+    opacity: 1;
+    transform: translate(-90%, -30%);
+}
+
+/* Colors for different skills */
+
+.skill-element[skill="JavaScript"]:hover {
+    transition: .5s;
+
+    background: var(--skill-javascript-bg);
+    border: 2px solid var(--skill-javascript-border);
+
+    filter: drop-shadow(0px 0px 10px var(--skill-javascript-bg));
+}
+
+.skill-element[skill="Java"]:hover {
+    transition: .5s;
+
+    background: var(--skill-java-bg);
+    border: 2px solid var(--skill-java-border);
+
+    filter: drop-shadow(0px 0px 10px var(--skill-java-bg));
+}
+
+.skill-element[skill="Kotlin"]:hover {
+    transition: .5s;
+
+    background: var(--skill-kotlin-bg);
+    border: 2px solid var(--skill-kotlin-border);
+
+    filter: drop-shadow(0px 0px 10px var(--skill-kotlin-bg));
+}

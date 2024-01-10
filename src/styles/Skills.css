@@ -12,7 +12,7 @@
 
     background-image: url(../assets/img/intro-bg.png);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
 
     gap: 80px;
 }
@@ -30,4 +30,19 @@
     align-content: center;
 
     filter: hue-rotate(338deg) drop-shadow(0px 0px 10px var(--toxyc-color));
+}
+
+.hard-skills {
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    gap: 20px;
 }

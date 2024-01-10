@@ -66,6 +66,20 @@
 	--intro-media-brightness: #ffffff3b;
 	--intro-animation-shadow: #000000;
 	--about-cv-brightness: #e4c30933;
+
+	/* Skill Colors */
+
+	--skills-default-bg: #ffffff1f;
+	--skills-default-border: #ffffff7e;
+
+	--skill-javascript-bg: #ffe05759;
+	--skill-javascript-border: #ffe057;
+
+	--skill-java-bg: #ff871759;
+	--skill-java-border: #ff8717;
+
+	--skill-kotlin-bg: #178fff59;
+	--skill-kotlin-border: #178fff;
 	
 	/* ====================== */
 

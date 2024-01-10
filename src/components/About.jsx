@@ -1,6 +1,19 @@
+import React, { useEffect } from 'react';
+import VanillaTilt from 'vanilla-tilt';
 import '../styles/About.css'
 
+import toxycPicture from '../assets/img/toxyc-picture-nobg.png'
+
 export function About() {
+	useEffect(() => {
+		VanillaTilt.init(document.querySelectorAll('.tilt-card'), {
+			max: 4,
+			speed: 150,
+			glare: true,
+			'max-glare': 1,
+		});
+	}, []);
+
     return (
         <div id="about" className="about">
             <div className="about-info-box">
@@ -17,7 +30,7 @@ export function About() {
                 </div>
             </div>
             <div className="about-picture-box">
-			    <img src="" alt="aboutPicture" className="about-picture" />
+			    <img src={toxycPicture} alt="aboutPicture" className="about-picture tilt-card" />
             </div>
         </div>
     )
