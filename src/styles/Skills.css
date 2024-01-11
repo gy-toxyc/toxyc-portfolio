@@ -32,17 +32,73 @@
     filter: hue-rotate(338deg) drop-shadow(0px 0px 10px var(--toxyc-color));
 }
 
-.hard-skills {
+.skills-box {
     width: 40%;
     height: 100%;
 
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
 
     justify-content: center;
     align-items: center;
     align-content: center;
 
+    gap: 30px;
+}
+
+.skills-title {
+    font-size: 55px;
+}
+
+.hard-skills {
+    width: 100%;
+    height: 20%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
     gap: 20px;
+}
+
+@media screen and (max-width: 1633px) {
+    .skills-box {
+        gap: 60px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .skills {
+        height: 30%;
+        flex-direction: column-reverse;
+
+        gap: 30px;
+    }
+
+    .skills-animation {
+        width: 100%;
+        height: 30%;
+    }
+
+    .skills-box {
+        width: 100%;
+        height: 40%;
+
+        gap: 10px;
+    }
+
+    .hard-skills {
+        height: 50%;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .skills-box {
+        gap: 30px;
+    }
 }
