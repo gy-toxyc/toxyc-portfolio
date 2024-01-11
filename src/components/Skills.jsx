@@ -1,21 +1,36 @@
-import React, { useRef, useEffect } from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import Lottie from 'lottie-react'
 import { Skill } from './Skill'
 
 import skillsAnimation from '../assets/animations/skills-animation.json'
 
+import htmlLogo from '../assets/img/skills/html-logo.webp'
+import cssLogo from '../assets/img/skills/css-logo.png'
 import javascriptLogo from '../assets/img/skills/javascript-logo.png'
+import reactLogo from '../assets/img/skills/react-logo.png'
+
 import javaLogo from '../assets/img/skills/java-logo.png'
 import kotlinLogo from '../assets/img/skills/kotlin-logo.png'
-import electronLogo from '../assets/img/skills/java-logo.png'
-import sqlLogo from '../assets/img/skills/java-logo.png'
+import sqlLogo from '../assets/img/skills/sql-logo.png'
+
+import androidLogo from '../assets/img/skills/android-logo.png'
+import electronLogo from '../assets/img/skills/electron-logo.png'
+import awsLogo from '../assets/img/skills/aws-logo.png'
+import ktorLogo from '../assets/img/skills/ktor-logo.png'
+import dockerLogo from '../assets/img/skills/docker-logo.png'
+
 
 import '../styles/Skills.css'
 
 export function Skills() {
-    const ANIMATION_SPEED = 1;
+    const ANIMATION_SPEED 		= 1;
+	const lottieRef 			= useRef();
 
-	const lottieRef = useRef();
+	const SKILL_FRONTEND 		= "FRONTEND"
+	const SKILL_BACKEND 		= "BACKEND"
+	const SKILL_OTHER 			= "OTHER"
+
+	const [skill, setSkill] 	= useState(SKILL_FRONTEND);
 
 	useEffect(() => {
 		if (lottieRef.current) {
@@ -23,19 +38,46 @@ export function Skills() {
 		}
 	}, []);
 
+	const handleSkillChange = (newSkill) => {
+	  	setSkill(newSkill);
+	};
+
     return (
         <div id="skills" className="skills">
 			<Lottie className="skills-animation" animationData={skillsAnimation} lottieRef={lottieRef} draggable="false" />
 
 		<div className="skills-box">
 			<h1 className="skills-title">SKILLS</h1>
-			<ul className="hard-skills">
+			<div className="skills-buttons-box">
+				<div className="skills-button skill-frontend-button" active={skill === SKILL_FRONTEND ? 'true' : 'false'} onClick={() => {handleSkillChange(SKILL_FRONTEND)}}>
+					<h3 className="skills-name">FRONTEND</h3>
+				</div>
+				<div className="skills-button skill-backend-button" active={skill === SKILL_BACKEND ? 'true' : 'false'} onClick={() => {handleSkillChange(SKILL_BACKEND)}}>
+					<h3 className="skills-name">BACKEND</h3>
+				</div>
+				<div className="skills-button skill-other-button" active={skill === SKILL_OTHER ? 'true' : 'false'} onClick={() => {handleSkillChange(SKILL_OTHER)}}>
+					<h3 className="skills-name">OTHER</h3>
+				</div>
+			</div>
+			<ul className="skills-list frontend-skills" active={skill === SKILL_FRONTEND ? 'true' : 'false'}>
+				<Skill name="HTML" image={htmlLogo} />
+				<Skill name="CSS" image={cssLogo} />
+				<Skill name="JavaScript" image={javascriptLogo} />
+				<Skill name="React" image={reactLogo} />
+			</ul>
+			
+			<ul className="skills-list backend-skills" active={skill === SKILL_BACKEND ? 'true' : 'false'}>
 				<Skill name="Java" image={javaLogo} />
 				<Skill name="Kotlin" image={kotlinLogo} />
 				<Skill name="SQL" image={sqlLogo} />
-				<Skill name="???" image={javascriptLogo} />
-				<Skill name="JavaScript" image={javascriptLogo} />
+			</ul>
+			
+			<ul className="skills-list other-skills" active={skill === SKILL_OTHER ? 'true' : 'false'}>
+				<Skill name="Android" image={androidLogo} />
 				<Skill name="Electron" image={electronLogo} />
+				<Skill name="AWS" image={awsLogo} />
+				<Skill name="Docker" image={dockerLogo} />
+				<Skill name="Ktor" image={ktorLogo} />
 			</ul>
 		</div>
 			

@@ -69,11 +69,24 @@
 
 	/* Skill Colors */
 
+	--skills-frontend-bg: #b47500;
+	--skills-backend-bg: #6049e2;
+	--skills-other-bg: #009945;
+
 	--skills-default-bg: #ffffff1f;
 	--skills-default-border: #ffffff7e;
 
+	--skill-html-bg: #f7770059;
+	--skill-html-border: #f77700;
+
+	--skill-css-bg: #085dfc59;
+	--skill-css-border: #085dfc;
+
 	--skill-javascript-bg: #ffe05759;
 	--skill-javascript-border: #ffe057;
+
+	--skill-react-bg: #08c3fc59;
+	--skill-react-border: #08c3fc;
 
 	--skill-java-bg: #ff871759;
 	--skill-java-border: #ff8717;
@@ -81,14 +94,23 @@
 	--skill-kotlin-bg: #178fff59;
 	--skill-kotlin-border: #178fff;
 
-	--skill-sql-bg: #178fff59;
-	--skill-sql-border: #178fff;
+	--skill-sql-bg: #ff9f4659;
+	--skill-sql-border: #ff9f46;
 
-	--skill-electron-bg: #178fff59;
-	--skill-electron-border: #178fff;
+	--skill-android-bg: #32964259;
+	--skill-android-border: #329642;
 
-	--skill-unknown-bg: #178fff59;
-	--skill-unknown-border: #178fff;
+	--skill-electron-bg: #5386f359;
+	--skill-electron-border: #5386f3;
+
+	--skill-aws-bg: #ff9f4659;
+	--skill-aws-border: #ff9f46;
+
+	--skill-docker-bg: #17b6ff59;
+	--skill-docker-border: #17b6ff;
+
+	--skill-ktor-bg: #178fff59;
+	--skill-ktor-border: #178fff;
 	
 	/* ====================== */
 

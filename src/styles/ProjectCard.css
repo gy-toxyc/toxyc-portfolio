@@ -1,0 +1,58 @@
+.project-element {
+    position: relative;
+
+    width: 600px;
+    height: 400px;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    background-color: #ffffff10;
+
+    border: 2px solid #fff;
+    border-radius: 18px;
+}
+
+.project-info {
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+
+    text-align: start;
+
+    gap: 10px;
+}
+
+.project-name {
+    font-size: 35px;
+    font-family: 'ArcaMajora3-Bold';
+}
+
+.project-desc {
+    line-height: 20px;
+
+    font-size: 16px;
+    font-family: 'Lexend-ExtraLight';
+
+    text-align: justify;
+}
+
+.project-image {
+    justify-self: flex-end;
+    height: 100px;
+}
