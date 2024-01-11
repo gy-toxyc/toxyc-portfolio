@@ -124,3 +124,10 @@
         font-size: 38px;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .intro-box {
+        height: 20%;
+        gap: 20px;
+    }
+}

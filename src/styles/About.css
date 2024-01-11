@@ -180,3 +180,39 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width: 400px) {
+    .about {
+        flex-direction: column-reverse;
+        gap: 0px;
+    }
+
+    .about-picture-box {
+        width: 20%;
+        height: 30%;
+    }
+
+    .about-picture {
+        width: 145px;
+        height: 190px;
+    }
+
+    .about-info-box {
+        align-items: center;
+        width: 80%;
+        height: 60%;
+    }
+
+    .about-info-title, .about-info-desc, .about-cv-button {
+        align-self: center;
+        text-align: center;
+    }
+
+    .about-info-title {
+        font-size: 30px;
+    }
+
+    .about-info-desc {
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,17 @@
+.projects {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
+    background-image: url(../assets/img/intro-bg-inverted.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+}

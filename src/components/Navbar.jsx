@@ -17,7 +17,7 @@ export function Navbar() {
                 <li className="navbar-element my-skills">
                     <a href="#skills"><h3>SKILLS</h3></a>
                 </li>
-                <li className="navbar-element projects">
+                <li className="navbar-element my-projects">
                     <a href="#projects"><h3>PROJECTS</h3></a>
                 </li>
             </ul>

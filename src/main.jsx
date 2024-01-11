@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar'
 import { Intro } from './components/Intro'
 import { About } from './components/About'
 import { Skills } from './components/Skills'
+import { Projects } from './components/Projects'
 
 import './index.css'
 
@@ -13,5 +14,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Intro />
     <About />
     <Skills />
+    <Projects />
   </React.StrictMode>,
 )

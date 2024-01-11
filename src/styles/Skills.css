@@ -66,15 +66,30 @@
     gap: 20px;
 }
 
-@media screen and (max-width: 1633px) {
+@media screen and (max-width: 1630px) {
     .skills-box {
-        gap: 60px;
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 1366px) {
+    .skills-box {
+        gap: 80px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .skills-box {
+        gap: 10px;
+    }
+
+    .skills-title {
+        font-size: 40px;
     }
 }
 
 @media screen and (max-width: 770px) {
     .skills {
-        height: 30%;
         flex-direction: column-reverse;
 
         gap: 30px;
@@ -99,6 +114,6 @@
 
 @media screen and (max-width: 470px) {
     .skills-box {
-        gap: 30px;
+        gap: 50px;
     }
 }
