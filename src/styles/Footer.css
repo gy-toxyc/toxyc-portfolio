@@ -59,3 +59,18 @@
 
     user-select: none;
 }
+
+.footer-media-icon {
+    font-size: 30px;
+    
+    opacity: 40%;
+    transition: .5s;
+}
+
+.footer-media-icon:hover {
+    cursor: pointer;
+
+    transition: .5s;
+    opacity: 100%;
+    filter: drop-shadow(0px 0px 10px var(--intro-media-brightness));
+}

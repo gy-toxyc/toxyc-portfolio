@@ -13,10 +13,10 @@ export function Footer() {
 
 			<ul className="footer-media">
 				<li className="footer-media-element">
-					<FaGithubSquare className="intro-media-icon github" />
+				<a href="https://github.com/srtoxyc" rel="noreferrer noopener" target="_blank"><FaGithubSquare className="footer-media-icon github" /></a>
 				</li>
 				<li className="footer-media-element">
-					<FaLinkedin className="intro-media-icon linkedin" />
+				<a href="https://www.linkedin.com/in/srtoxyc/" rel="noreferrer noopener" target="_blank"><FaLinkedin className="footer-media-icon linkedin" /></a>
 				</li>
 			</ul>
 
