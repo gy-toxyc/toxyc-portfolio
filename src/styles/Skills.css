@@ -118,7 +118,7 @@
 
 .skills-button {
     width: 33%;
-    height: 40px;
+    height: 100%;
 
     display: flex;
     flex-direction: row;
@@ -172,7 +172,11 @@
 
 @media screen and (max-width: 1630px) {
     .skills-box {
-        gap: 80px;
+        gap: 30px;
+    }
+
+    .skills-buttons-box {
+        margin-top: -12%;
     }
 }
 
@@ -184,11 +188,26 @@
 
 @media screen and (max-width: 1024px) {
     .skills-box {
-        gap: 10px;
+        gap: 0px;
     }
 
     .skills-title {
         font-size: 40px;
+    }
+
+    .skills-list {
+        height: 200px;
+    }
+
+    .skills-buttons-box {
+        width: 200px;
+        height: 30px;
+
+        margin: 0px;
+    }
+
+    .skills-name {
+        font-size: 10px;
     }
 }
 
@@ -208,7 +227,11 @@
         width: 100%;
         height: 40%;
 
-        gap: 10px;
+        gap: 20px;
+    }
+
+    .skills-buttons-box {
+        margin-top: -2%;
     }
 
     .skills-list {
@@ -218,6 +241,6 @@
 
 @media screen and (max-width: 470px) {
     .skills-box {
-        gap: 50px;
+        gap: 20px;
     }
 }

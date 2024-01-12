@@ -1,8 +1,8 @@
 .project-element {
     position: relative;
 
-    width: 600px;
-    height: 400px;
+    width: 400px;
+    height: 280px;
 
     display: flex;
     flex-direction: column;
@@ -15,10 +15,12 @@
     padding-top: 20px;
     padding-bottom: 20px;
 
-    background-color: #ffffff10;
+    background-color: var(--projects-bg);
 
-    border: 2px solid #fff;
+    border: 2px solid var(--projects-border);
     border-radius: 18px;
+
+    transition: .5s;
 }
 
 .project-info {
@@ -35,24 +37,119 @@
 
     text-align: start;
 
-    gap: 10px;
+    gap: 15px;
 }
 
 .project-name {
-    font-size: 35px;
+    font-size: 30px;
     font-family: 'ArcaMajora3-Bold';
 }
 
 .project-desc {
-    line-height: 20px;
+    line-height: 18px;
 
-    font-size: 16px;
+    font-size: 14px;
     font-family: 'Lexend-ExtraLight';
 
-    text-align: justify;
+    text-align: center;
 }
 
 .project-image {
+    position: absolute;
+
+    height: 180px;
+
     justify-self: flex-end;
-    height: 100px;
+
+    top: 70%;
+    opacity: 0;
+
+    border: 2px solid var(--projects-border);
+    border-radius: 12px;
+
+    filter: drop-shadow(0px 0px 10px #000);
+
+    z-index: 3;
+
+    transition: .5s;
+}
+
+.project-element:hover .project-image {
+    transition: .5s;
+
+    opacity: 1;
+    transform: translateY(-30%);
+}
+
+@media screen and (max-width: 1360px) {
+    .project-element {
+        width: 400px;
+        height: 250px;
+    }
+
+    .project-name {
+        font-size: 25px;
+    }
+
+    .project-desc {
+        font-size: 12px;
+    }
+
+    .project-image {
+        height: 200px;
+
+        top: 65%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .project-element {
+        width: 350px;
+        height: 200px;
+    }
+
+    .project-name {
+        font-size: 20px;
+    }
+
+    .project-desc {
+        font-size: 10px;
+    }
+
+    .project-image {
+        height: 170px;
+
+        top: 65%;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .project-element {
+        width: 250px;
+        height: 140px;
+    }
+
+    .project-info {
+        gap: 5px;
+    }
+
+    .project-name {
+        font-size: 18px;
+    }
+
+    .project-desc {
+        font-size: 8px;
+    }
+
+    .project-image {
+        height: 120px;
+
+        top: 70%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .project-image {
+        height: 150px;
+    }
 }

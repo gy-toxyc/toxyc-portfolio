@@ -54,8 +54,8 @@
 
 @media screen and (max-width: 1070px) {
     .skill-element {
-        height: 60px;
-        width: 160px;
+        height: 50px;
+        width: 140px;
     }
 
     .skill-name {
