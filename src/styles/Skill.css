@@ -52,6 +52,17 @@
     transform: translate(-90%, -30%);
 }
 
+@media screen and (max-width: 1470px) {
+    .skill-element {
+        height: 60px;
+        width: 140px;
+    }
+
+    .skill-name {
+        font-size: 18px;
+    }
+}
+
 @media screen and (max-width: 1070px) {
     .skill-element {
         height: 50px;

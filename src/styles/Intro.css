@@ -10,7 +10,7 @@
     align-items: center;
     align-content: center;
 
-    background-image: url(../assets/img/intro-bg.png);
+    background-image: url(../assets/img/backgrounds/intro-bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -102,9 +102,24 @@
     filter: drop-shadow(0px 0px 10px var(--intro-media-brightness));
 }
 
+@media screen and (max-width: 1470px) {
+    .intro {
+        gap: 30px;
+    }
+    .intro-text span {
+        height: 90%;
+        font-size: 60px;
+    }
+
+    .intro-text {
+        line-height: 10px;
+        font-size: 20px;
+    }
+}
+
 @media screen and (max-width: 720px) {
     .intro-animation {
-        height: 27%;
+        font-size: 15px;
     }
 
     .intro-box {

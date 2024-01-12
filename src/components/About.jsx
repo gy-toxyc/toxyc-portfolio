@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import VanillaTilt from 'vanilla-tilt';
 import '../styles/About.css'
 
-import toxycPicture from '../assets/img/toxyc-picture-nobg.png'
+import toxycPicture from '../assets/img/toxyc/toxyc-picture-nobg.webp'
 
 export function About({ title }) {
     const TXT_DESCRIPTION   = "Apasionado del desarrollo de 21 años.<br />Desde la adolescencia, se ha sumergido en el fascinante mundo de la programación, enfocándose especialmente en el desarrollo de videojuegos y el desarrollo back-end.<br /><br />Su interés se extiende al desarrollo full-stack, y cuenta con experiencia en Java/Kotlin, JavaScript y SQL. Además, posee un nivel de inglés casi-nativo (C1).<br />Su pasión y habilidades suponen una importante adición a proyectos innovadores.<br />";

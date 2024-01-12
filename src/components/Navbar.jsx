@@ -1,11 +1,11 @@
-import toxycLogo from '../assets/img/toxyc-logo.png';
+import toxycLogo from '../assets/img/toxyc/toxyc-logo.webp';
 
 import '../styles/Navbar.css';
 
 export function Navbar(props) {
     return (
         <div className="navbar">
-            <img className="navbar-logo" src={toxycLogo} alt="toxycLogo" draggable="false" />
+            <a href="#home"><img className="navbar-logo" src={toxycLogo} alt="toxycLogo" draggable="false" /></a>
 
             <ul className="navbar-list">
                 <li className="navbar-element about-me">

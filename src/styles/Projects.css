@@ -10,7 +10,7 @@
     align-items: center;
     align-content: center;
 
-    background-image: url(../assets/img/intro-bg-inverted.png);
+    background-image: url(../assets/img/backgrounds/intro-bg-inverted.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 100%;
@@ -46,6 +46,16 @@
 
     .projects-list {
         height: 50%;
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    .projects {
+        gap: 10px;
+    }
+    
+    .projects-list {
+        height: 80%;
     }
 }
 

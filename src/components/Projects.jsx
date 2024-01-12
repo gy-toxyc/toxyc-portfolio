@@ -2,8 +2,8 @@ import '../styles/Projects.css'
 import { ProjectCard } from './ProjectCard'
 import Project from '../entities/Project.js'
 
-import electronifyImage from '../assets/img/projects/electronify-image.png'
-import gycodingImage from '../assets/img/projects/gycoding-image.png'
+import electronifyImage from '../assets/img/projects/electronify-image.webp'
+import gycodingImage from '../assets/img/projects/gycoding-image.webp'
 
 export function Projects({ title }) {
 	const projectElectronify = new Project(

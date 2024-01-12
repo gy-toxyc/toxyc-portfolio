@@ -2,7 +2,7 @@ import Lottie from 'lottie-react'
 import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
 
 import '../styles/Footer.css'
-import toxycLogo from '../assets/img/toxyc-logo.png'
+import toxycLogo from '../assets/img/toxyc/toxyc-logo.webp'
 
 export function Footer() {
 	const TXT_COPY = "Iván Vicente 2024";
