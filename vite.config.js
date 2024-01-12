@@ -7,5 +7,5 @@ export default defineConfig({
 	server: {
 		host: true
 	},
-	base: "/toxyc-portfolio"
+	base: "/"
 })
