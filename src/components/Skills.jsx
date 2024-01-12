@@ -15,20 +15,20 @@ import sqlLogo from '../assets/img/skills/sql-logo.png'
 
 import androidLogo from '../assets/img/skills/android-logo.png'
 import electronLogo from '../assets/img/skills/electron-logo.png'
-import awsLogo from '../assets/img/skills/aws-logo.png'
+import githubLogo from '../assets/img/skills/github-logo.png'
 import ktorLogo from '../assets/img/skills/ktor-logo.png'
 import dockerLogo from '../assets/img/skills/docker-logo.png'
 
 
 import '../styles/Skills.css'
 
-export function Skills() {
-    const ANIMATION_SPEED 		= 1;
-	const lottieRef 			= useRef();
-
+export function Skills({ title }) {
 	const SKILL_FRONTEND 		= "FRONTEND"
 	const SKILL_BACKEND 		= "BACKEND"
 	const SKILL_OTHER 			= "OTHER"
+
+	const ANIMATION_SPEED 		= 1;
+	const lottieRef 			= useRef();
 
 	const [skill, setSkill] 	= useState(SKILL_FRONTEND);
 
@@ -47,16 +47,16 @@ export function Skills() {
 			<Lottie className="skills-animation" animationData={skillsAnimation} lottieRef={lottieRef} draggable="false" />
 
 		<div className="skills-box">
-			<h1 className="skills-title">SKILLS</h1>
+			<h1 className="skills-title">{title}</h1>
 			<div className="skills-buttons-box">
 				<div className="skills-button skill-frontend-button" active={skill === SKILL_FRONTEND ? 'true' : 'false'} onClick={() => {handleSkillChange(SKILL_FRONTEND)}}>
-					<h3 className="skills-name">FRONTEND</h3>
+					<h3 className="skills-name">{SKILL_FRONTEND}</h3>
 				</div>
 				<div className="skills-button skill-backend-button" active={skill === SKILL_BACKEND ? 'true' : 'false'} onClick={() => {handleSkillChange(SKILL_BACKEND)}}>
-					<h3 className="skills-name">BACKEND</h3>
+					<h3 className="skills-name">{SKILL_BACKEND}</h3>
 				</div>
 				<div className="skills-button skill-other-button" active={skill === SKILL_OTHER ? 'true' : 'false'} onClick={() => {handleSkillChange(SKILL_OTHER)}}>
-					<h3 className="skills-name">OTHER</h3>
+					<h3 className="skills-name">{SKILL_OTHER}</h3>
 				</div>
 			</div>
 			<ul className="skills-list frontend-skills" active={skill === SKILL_FRONTEND ? 'true' : 'false'}>
@@ -75,7 +75,7 @@ export function Skills() {
 			<ul className="skills-list other-skills" active={skill === SKILL_OTHER ? 'true' : 'false'}>
 				<Skill name="Android" image={androidLogo} />
 				<Skill name="Electron" image={electronLogo} />
-				<Skill name="AWS" image={awsLogo} />
+				<Skill name="GIT / GitHub" image={githubLogo} />
 				<Skill name="Docker" image={dockerLogo} />
 				<Skill name="Ktor" image={ktorLogo} />
 			</ul>

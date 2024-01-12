@@ -146,13 +146,13 @@
     filter: drop-shadow(0px 0px 10px var(--skill-android-bg));
 }
 
-.skill-element[skill="AWS"]:hover {
+.skill-element[skill="GIT / GitHub"]:hover {
     transition: .5s;
 
-    background: var(--skill-aws-bg);
-    border: 2px solid var(--skill-aws-border);
+    background: var(--skill-github-bg);
+    border: 2px solid var(--skill-github-border);
 
-    filter: drop-shadow(0px 0px 10px var(--skill-aws-bg));
+    filter: drop-shadow(0px 0px 10px var(--skill-github-bg));
 }
 
 .skill-element[skill="Electron"]:hover {

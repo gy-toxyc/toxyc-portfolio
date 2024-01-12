@@ -175,14 +175,18 @@
         gap: 30px;
     }
 
-    .skills-buttons-box {
-        margin-top: -12%;
+    .skills-list {
+        height: 220px;
     }
 }
 
 @media screen and (max-width: 1366px) {
     .skills-box {
         gap: 80px;
+    }
+
+    .skills-list {
+        height: 120px;
     }
 }
 

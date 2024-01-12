@@ -5,6 +5,8 @@ import '../styles/Footer.css'
 import toxycLogo from '../assets/img/toxyc-logo.png'
 
 export function Footer() {
+	const TXT_COPY = "Iván Vicente 2024";
+
 	return (
 		<footer className="footer">
 			<img src={toxycLogo} alt="toxycLogo" className="footer-logo" draggable="false" />
@@ -18,7 +20,7 @@ export function Footer() {
 				</li>
 			</ul>
 
-			<h6 className="footer-copy">Iván Vicente 2024</h6>
+			<h6 className="footer-copy">{TXT_COPY}</h6>
 		</footer>
 	)
 }

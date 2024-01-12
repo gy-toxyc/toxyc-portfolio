@@ -14,7 +14,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 
     gap: 10px;
 }
@@ -52,7 +52,10 @@
 }
 
 .footer-copy {
+    font-family: 'Lexend-ExtraLight';
     font-size: 14px;
 
     color: #ffffff36;
+
+    user-select: none;
 }

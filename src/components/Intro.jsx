@@ -7,9 +7,10 @@ import introAnimation from '../assets/animations/intro-animation.json'
 import '../styles/Intro.css'
 
 export function Intro() {
-    const ANIMATION_SPEED = 0.2;
+	const TXT_INTRO 		= "<span>IVÁN VICENTE</span><br />SOFTWARE DEVELOPER";
+    const ANIMATION_SPEED 	= 0.2;
 
-	const lottieRef = useRef();
+	const lottieRef 		= useRef();
 
 	useEffect(() => {
 		if (lottieRef.current) {
@@ -22,7 +23,7 @@ export function Intro() {
 			<Lottie className="intro-animation" animationData={introAnimation} lottieRef={lottieRef} draggable="false" />
 
 			<div className="intro-box">
-				<h3 className="intro-text"><span>IVÁN VICENTE</span><br />SOFTWARE DEVELOPER</h3>
+				<h3 className="intro-text" dangerouslySetInnerHTML={{ __html: TXT_INTRO }} />
 
 				<ul className="intro-media">
 					<li className="intro-media-element">

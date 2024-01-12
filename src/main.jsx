@@ -9,13 +9,17 @@ import { Footer } from './components/Footer'
 
 import './index.css'
 
+const TITLE_ABOUT     = "ABOUT"
+const TITLE_SKILLS    = "SKILLS"
+const TITLE_PROJECTS  = "PROJECTS"
+
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <Navbar />
+    <Navbar about={TITLE_ABOUT} skills={TITLE_SKILLS} projects={TITLE_PROJECTS}/>
     <Intro />
-    <About />
-    <Skills />
-    <Projects />
+    <About title={TITLE_ABOUT} />
+    <Skills title={TITLE_SKILLS} />
+    <Projects title={TITLE_PROJECTS} />
     <Footer />
   </React.StrictMode>,
 )
