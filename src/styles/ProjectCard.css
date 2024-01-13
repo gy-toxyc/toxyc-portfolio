@@ -2,7 +2,7 @@
     position: relative;
 
     width: 400px;
-    height: 280px;
+    height: 250px;
 
     display: flex;
     flex-direction: column;
@@ -61,6 +61,7 @@
 
     user-select: none;
 }
+
 .project-image {
     position: absolute;
 
@@ -68,7 +69,7 @@
 
     justify-self: flex-end;
 
-    top: 70%;
+    top: 65%;
     opacity: 0;
 
     border: 2px solid var(--projects-border);

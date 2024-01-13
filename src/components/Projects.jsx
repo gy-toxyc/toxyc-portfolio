@@ -4,6 +4,8 @@ import Project from '../entities/Project.js'
 
 import electronifyImage from '../assets/img/projects/electronify-image.webp'
 import gycodingImage from '../assets/img/projects/gycoding-image.webp'
+import serverImage from '../assets/img/projects/server-image.webp'
+import mobileImage from '../assets/img/projects/mobile-image.png'
 
 export function Projects({ title }) {
 	const projectElectronify = new Project(
@@ -21,13 +23,13 @@ export function Projects({ title }) {
 	const projectServer = new Project(
 		"Servidor de Usuarios", 
 		"Servidor HTTP de gestión de usuarios desarrollado con Ktor, Kotlin. Desplegado con Docker y con acceso a una base de datos remota. Antes usaba AWS RDS con MySQL.",
-		electronifyImage,
+		serverImage,
 		"https://github.com/GY-CODING/login-server"
 	);
 	const projectMobileApp 	= new Project(
 		"Aplicación Móvil", 
 		"Aplicación móvil de gestión e información de personajes de un videojuego que presenta un inicio de sesión y un registro de usuarios, además de almacenamiento de datos en una base de datos remota.", 
-		electronifyImage,
+		mobileImage,
 		"https://github.com/srtoxyc/practica-fotg"
 	);
 	
