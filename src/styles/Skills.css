@@ -176,7 +176,7 @@
     }
 
     .skills-list {
-        height: 220px;
+        height: 280px;
     }
 }
 
@@ -200,7 +200,7 @@
     }
 
     .skills-list {
-        height: 200px;
+        height: 240px;
     }
 
     .skills-buttons-box {
@@ -229,7 +229,7 @@
 
     .skills-box {
         width: 100%;
-        height: 40%;
+        height: 50%;
 
         gap: 20px;
     }
@@ -239,12 +239,16 @@
     }
 
     .skills-list {
-        height: 50%;
+        height: 30%;
     }
 }
 
 @media screen and (max-width: 470px) {
     .skills-box {
         gap: 20px;
+    }
+
+    .skills-list {
+        height: 65%;
     }
 }
