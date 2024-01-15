@@ -177,14 +177,12 @@
         font-size: 18px;
     }
 
-    .project-desc {
-        font-size: 8px;
+    .project-image {
+        display: none;
     }
 
-    .project-image {
-        height: 80px;
-
-        top: 70%;
+    .project-desc {
+        display: none;
     }
 }
 
@@ -192,14 +190,6 @@
     .project-element {
         width: 140px;
         height: 100px;
-    }
-
-    .project-image {
-        display: none;
-    }
-
-    .project-desc {
-        display: none;
     }
 }
 
