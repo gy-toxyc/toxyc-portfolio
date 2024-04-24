@@ -13,7 +13,7 @@ export function Footer() {
 
 			<ul className="footer-media">
 				<li className="footer-media-element">
-				<a href="https://github.com/srtoxyc" rel="noreferrer noopener" target="_blank"><FaGithubSquare className="footer-media-icon github" /></a>
+				<a href="https://github.com/gy-toxyc" rel="noreferrer noopener" target="_blank"><FaGithubSquare className="footer-media-icon github" /></a>
 				</li>
 				<li className="footer-media-element">
 				<a href="https://www.linkedin.com/in/srtoxyc/" rel="noreferrer noopener" target="_blank"><FaLinkedin className="footer-media-icon linkedin" /></a>

@@ -12,7 +12,7 @@ export function Projects({ title }) {
 		"Electronify", 
 		"Programa de escritorio que crea proyectos de Electron desarrollado con el propio Electron, NodeJS, HTML, CSS y JavaScript Vanilla.",
 		electronifyImage,
-		"https://github.com/srtoxyc/electronify/releases/tag/v1.0.0"
+		"https://github.com/gy-toxyc/electronify/releases/tag/v1.0.0"
 	);
 	const projectGY = new Project(
 		"GYCODING Website", 
@@ -30,7 +30,7 @@ export function Projects({ title }) {
 		"Aplicación Móvil", 
 		"Aplicación móvil de gestión e información de personajes de un videojuego que presenta un inicio de sesión y un registro de usuarios, además de almacenamiento de datos en una base de datos remota.", 
 		mobileImage,
-		"https://github.com/srtoxyc/practica-fotg"
+		"https://github.com/gy-toxyc/practica-fotg"
 	);
 	
 	return (
